@@ -87,3 +87,9 @@ button:focus {
     text-decoration: underline;
     cursor: pointer;
 }
+
+@media (max-width: 570px) {
+    .title {
+        font-size: 34px;
+    }
+}

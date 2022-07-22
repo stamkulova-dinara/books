@@ -62,3 +62,17 @@
         gap: 100px;
     }
 }
+
+@media (max-width: 609px) {
+    .detail-info__header {
+        padding: 0;
+        gap: 100px;
+    }
+}
+
+@media (max-width: 570px) {
+    .detail-info__header {
+        padding: 0;
+        gap: 50px;
+    }
+}
