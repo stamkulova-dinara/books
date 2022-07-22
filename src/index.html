@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Books app</title>
+</head>
+<body>
+    <section class="main">
+            <div class="container a-container" id="a-container">
+                <form class="form" id="form" method="" action="">
+                    <h2 class="form_title title">Create Account</h2>
+                    <input class="form__input name" type="text" placeholder="Username" required>
+                    <p class="name-error error"></p>
+                    <input class="form__input firstName" type="text" placeholder="First name" required>
+                    <p class="name-error error"></p>
+                    <input class="form__input age" type="number" placeholder="Age" required>
+                    <p class="name-error error"></p>
+                    <input class="form__input password" type="password" placeholder="Password" required>
+                    <p class="password-error error"></p>
+                    <input class="form__input try-password" type="password" placeholder="Try password" required>
+                    <p class="password-error error"></p>
+                    <div class="link">
+                        <p>Do you have an account?</p>
+                        <a role="button" id="open-modal">Sign-in</a>
+                    </div>
+                    <button class="form__button button submit signin-btn">SIGN UP</button>
+                </form>
+            </div>
+            <div class="modal mod-window">
+                <div class="modal-content mod-content">
+                    <div class="modal__content-close">
+                        <img src="./assets/icons/close.svg" alt="close" class="modal__close">
+                    </div>
+                    <form class="form" id="form-login" method="" action="">
+                        <h2 class="form_title title">Sign in</h2>
+                        <input class="form__input login-username" type="text" placeholder="Username" required>
+                        <p class="login-error error"></p>
+                        <input class="form__input login-password" type="password" placeholder="Password" required>
+                        <p class="login-error error"></p>
+                        <button class="form__button button submit login-btn">SIGN IN</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>

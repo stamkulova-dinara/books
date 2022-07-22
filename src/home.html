@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Books</title>
+</head>
+<body>
+    <section class="home">
+        <div class="home-content">
+            <div class="home-header">
+                <div class="home-header__content">
+                    <img src="./assets/icons/user.svg" alt="user" class="home-user">
+                    <p class="home-header__name user-name"></p>
+                    <p class="signout">Signout</p>
+                </div>
+            </div>
+            <div class="home-box">
+                <div class="home_book-content">
+                    <h1 class="title">List of books</h1>
+                </div>
+                <div class="home-cards">
+                    <div class="no-books hidden">
+                        <h2>no books yet</h2>
+                    </div>
+                </div>
+                <div class="home_book-content">
+                    <button class="home_add-book-btn" id="open__add-book-modal">Add a book</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-delete mod-window">
+            <div class="modal-delete-content mod-content">
+                <h2>Are you sure you want to remove?</h2>
+                <div class="modal-delete__btns">
+                    <button class="book-deletes btn">Yes</button>
+                    <div class="loader-box hidden">
+                        <img src="/src/assets/icons/loader2.svg" alt="loader" class="loader-svg">
+                    </div>
+                    <button class="moadl-delete-close btn">No</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal__add-book mod-window">
+            <div class="modal__add-book-content mod-content">
+                <div class="modal__content-close">
+                    <img src="./assets/icons/close.svg" alt="close" class="modal__add-book-close">
+                </div>
+                <form action="" class="form form-add-book">
+                    <h3>Add a book</h3>
+                    <input type="text" placeholder="Name" class="form__input create-name" required>
+                    <input type="text" placeholder="Author" class="form__input craete-author" required>
+                    <input type="number" placeholder="Publish year" class="form__input create-year" required>
+                    <input type="text" placeholder="Publish house" class="form__input create-house" required>
+                    <input type="number" placeholder="Pages number" class="form__input create-pages" required>
+                    <input type="text" placeholder="genres" class="form__input create-genres" required>
+                    <input type="text" placeholder="Original language" class="form__input create-language" required>
+                    <button class="button create-book__btn">Save</button>
+                    <p class="success-text hidden">Successfully added a new book</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.modal__add-book {
+    display: none; 
+    padding: 30px 15px;
+}
+
+.modal__add-book-content {
+    padding: 30px;
+}
+/* .modal__content-close {
+    text-align: end;
+} */
+.modal__add-book-close {
+    cursor: pointer;
+}

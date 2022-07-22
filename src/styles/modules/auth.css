@@ -1,0 +1,118 @@
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    /* background-color: #ecf0f3; */
+    color: #a0a5a8;
+    /* font-family: sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.container {
+    align-items: center;
+    width: 600px;
+    height: 100%;
+    /* background-color: #ecf0f3; */
+    transition: 1.25s;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.inp-err {
+    border: 1px solid red !important;
+}
+.form__input:focus {
+    box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
+}
+.form__span {
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+.form__link {
+    color: #181818;
+    font-size: 15px;
+    margin-top: 25px;
+    border-bottom: 1px solid #a0a5a8;
+    line-height: 2;
+}
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 2.5;
+    /* color: #181818; */
+    color: #287F9A;
+    margin-top: 0;
+    font-family: 'Lobster', cursive;
+}
+.description {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    text-align: center;
+    line-height: 1.6;
+}
+.button {
+    width: 350px;
+    height: 50px;
+    /* border-radius: 25px; */
+    border-radius: 15px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.15px;
+    background-color: #287F9A;
+    /* background-color: #4b70e2; */
+    color: #f9f9f9;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+    border: none;
+    outline: none;
+}
+
+.link {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    /* width: 100%; */
+    width: 340px;
+    font-size: 16px;
+}
+.link a {
+    text-decoration: underline;
+    color: #287F9A;
+    /* text-transform: uppercase; */
+    font-family: 'Lobster', cursive;
+    /* padding: 2px 3px; */
+    /* border: 1px solid #287F9A; */
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.link p {
+    padding-top: 2px;
+}
+.error {
+    /* position: absolute; */
+    color: red;
+    margin: 0;
+    margin-left: calc(-190px);
+}
+
+.name-error {
+    margin-left: calc(-90px);
+}
+
+.success  {
+    background-color: gray;
+}
+
+.submit:focus, .login-btn:focus, .create-book__btn:focus {
+    box-shadow: 0 0 0 4px rgb(180, 180, 180);
+}

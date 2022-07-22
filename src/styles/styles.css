@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('./modules/auth.css');
+@import url('./modules/main.css');
+@import url('./modules/modal-window.css');
+@import url('./modules/home.css');
+@import url('./modules/add-book.css');
+@import url('./modules/detail-info.css');
+@import url('./modules/edit-book-modal.css');
+@import url('./modules/delete-modal.css');
+@import url('./modules/loader.css');

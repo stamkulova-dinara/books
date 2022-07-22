@@ -1,0 +1,32 @@
+.loader {
+    padding: 110px 15px;
+    text-align: center;
+}
+
+.loader-content {
+    padding: 30px 30px 80px 30px;
+}
+
+.loader-box {
+    width: 185px;
+    height: 40px;
+    margin-top: 30px;
+}
+.loader-svg {
+    /* width: 100px; */
+    height: 100%;
+    animation: rotation 2s infinite linear;
+}
+
+.modal-delete__btns {
+    display: flex;
+    justify-content: space-between;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

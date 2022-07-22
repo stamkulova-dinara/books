@@ -1,0 +1,11 @@
+.modal {
+    display: none; 
+    padding: 110px 15px;
+}
+
+.modal-content {
+    padding: 30px 30px 80px 30px;
+}
+.modal__close {
+    cursor: pointer;
+}

@@ -1,0 +1,89 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ecf0f3;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.visible {
+    display: block !important;
+}
+
+.hidden {
+    display: none;
+}
+
+button, img {
+    cursor: pointer;
+}
+button:focus {
+    box-shadow: 0 0 0 4px #86b4c2;
+}
+.success-text {
+    color: green;
+    margin-top: 5px;
+}
+.form__input {
+    width: 350px;
+    height: 40px;
+    margin: 12px 0 0 0;
+    padding-left: 25px;
+    font-size: 13px;
+    letter-spacing: 0.15px;
+    border: none;
+    outline: none;
+    background-color: #ecf0f3;
+    transition: 0.25s ease;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+    /* box-shadow: inset 2px 2px 2px #fa2d2d, inset -2px -2px 2px #db1313; */
+}
+
+.btn {
+    width: 185px;
+    height: 40px;
+    color: white;
+    background-color: #287F9A;
+    align-items: center;
+    border: none;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.mod-window {
+    position: fixed; 
+    z-index: 80; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.mod-content {
+    border: 1px solid #888;
+    max-width: 390px;
+    border-radius: 30px;
+    background-color: #ecf0f3;
+    margin: auto;
+}
+
+.modal__content-close, .modal__delete-close {
+    text-align: end;
+}
+
+.signout {
+    padding: 5px 0 0 30px;
+    font-weight: 500;
+}
+
+.signout:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

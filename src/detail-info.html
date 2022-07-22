@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="detail-info">
+        <div class="detail-info__content">
+            <div class="home-header">
+                <div class="home-header__content">
+                    <img src="./assets/icons/user.svg" alt="user" class="home-user">
+                    <p class="home-header__name user-name"></p>
+                    <p class="signout">Signout</p>
+                </div>
+            </div>
+            <div class="detail-info__content">
+                <div class="detail-info__header">
+                    <img src="./assets/icons/back-icon.svg" alt="back-icon" class="back-icon">
+                    <h2 class="title">Book Information</h2>
+                </div>
+                <div class="detail-info__box">
+                    <h2 class="book-title"></h2>
+                    <p class="book-author"></p>
+                    <div class="detail-info__book-info">
+                        <div>
+                            <p>Издательтсво: <span class="book-house"></span></p>
+                            <p>Язык оригинала: <span class="book-language"></span></p>
+                            <p>Год издания: <span class="book-year"></span></p>
+                        </div>
+                        <div>
+                            <p>Кол-во страниц: <span class="book-pages"></span></p>
+                            <p> Жанры: <span class="book-genres"></span></p>
+                        </div>
+                    </div>
+                    <div class="detail-info__book-footer">
+                        <button class="button" id="open__edit-book">Edit</button>
+                        <div class="detail-info__book-icon">
+                            <img src="./assets/icons/delete.svg" alt="delete" class="delete-book">
+                            <div class="like-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-delete mod-window">
+            <div class="modal-delete-content mod-content">
+                <h2 class="delete-modal__quiz">Are you sure you want to remove?</h2>
+                <div class="modal-delete__btns">
+                    <button class="book-delete btn">Yes</button>
+                    <div class="loader-box hidden">
+                        <img src="/src/assets/icons/loader2.svg" alt="loader" class="loader-svg">
+                    </div>
+                    <button class="moadl-delete-close btn">No</button>
+                </div>
+            </div>
+        </div>
+        <div class="edit-book-modal mod-window">
+            <div class="edit-book-modal__content mod-content">
+                <div class="modal__content-close">
+                    <img src="./assets/icons/close.svg" alt="close" class="edit-book-modal__close">
+                </div>
+                <form action="" class="form update-form">
+                    <h3>Edit Book</h3> 
+                    <div class="edit-book-modal__header">
+                    </div>
+                    <!-- <img src="./assets/icons/like.svg" alt="like"> -->
+                    <input type="text" placeholder="Name" class="form__input update-name" required>
+                    <input type="text" placeholder="Author" class="form__input update-author" required>
+                    <input type="number" placeholder="Publish year" class="form__input update-year" required>
+                    <input type="text" placeholder="Publish house" class="form__input update-house" required>
+                    <input type="number" placeholder="Pages number" class="form__input update-pages" required>
+                    <input type="text" placeholder="genres" class="form__input update-genres" required>
+                    <input type="text" placeholder="Original language" class="form__input update-language" required>
+                    <div class="delete-btn_update-modal" role="button">
+                        <img src="./assets/icons/delete.svg" alt="delete">
+                            <button class="delete-text_update-modal">delete</button>
+                    </div>
+                    <button class="button form-update__btn">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
