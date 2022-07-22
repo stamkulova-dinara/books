@@ -54,10 +54,6 @@ export function signin() {
             }
             setTimeout(async () => {
                 const response = await signUpPost(info) 
-                console.log(response, "stat");
-                    // if (response !== null) {
-                    //     localStorage.setItem('token', JSON.stringify(response.token))
-                    // }
                     if (response) {
                         localStorage.setItem('token', JSON.stringify(response.token))
                         window.location.href = '/src/home.html'
@@ -75,23 +71,6 @@ export function signin() {
                 nameErr([name, firstName])
             })
         })
-        console.log(checkPass());
-        // let info = {
-        //     username: name.value,
-        //     password: password.value,
-        //     firstName: firstName.value,
-        //     age: age.value
-        // }
-        // const data = async () => {
-        //     const response = await signUpPost(info) 
-        //     console.log(response, "stat");
-        //     if (response !== null) {
-        //         localStorage.setItem('token', JSON.stringify(response.token))
-        //         // window.location.href = '/src/home.html'
-        //     }
-        // }
-        // data()
-        // console.log(data());
     })
 
 }
